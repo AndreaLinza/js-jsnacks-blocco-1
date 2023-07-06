@@ -16,9 +16,20 @@ for (i = 0; i <= 100; i++) {
     }
     
 }
+let totNumber = 0;
+for (let i = 0; i < allNumber.length; i++){
+    totNumber += allNumber[i];
+    document.getElementById("tot-number").innerHTML = `${totNumber}`
+}
+let totNumberEven = 0;
+for (let i = 0; i < numberOdd.length; i++){
+    totNumberEven += numberEven[i];
+    document.getElementById("tot-even").innerHTML = `${totNumberEven}`
+}
 let totNumberOdd = 0;
 for (let i = 0; i < numberOdd.length; i++){
     totNumberOdd += numberOdd[i];
+    document.getElementById("tot-odd").innerHTML = `${totNumberOdd}`
 }
 /*const totNumberOdd = 0;
 const sumWithInitial = numberOdd.reduce(
