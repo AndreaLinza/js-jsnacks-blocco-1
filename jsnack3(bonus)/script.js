@@ -10,7 +10,7 @@ for (let i = 0; i <= 5; i++) {
 
 }
 
-for (let i = 0; i <= 10; i++) {
+for (let i = 0; i <= 15; i++) {
     numArray2 = Math.floor(Math.random() * 10);
     array2.push(numArray2)
 
@@ -38,22 +38,28 @@ console.log(array2)
     
 }*/
 btnEqual.addEventListener("click", function () {
-    
 
-    for (let i = 0; arra < diff.length; i++) {
 
-        if (array1.length > array2.length) {
+    for (let i = 0; i < diff; i++) {
+
+        if (array1.length < array2.length) {
             array1.push(2)
             document.getElementById("first-equal").innerHTML = `${array1.length}`
         }
-        else{
+        else if (array1.length > array2.length) {
             array2.push(3)
             document.getElementById("second-equal").innerHTML = `${array2.length}`
         }
+        else {
+            break;
+
+        }
     }
 
+    document.querySelector(".yeah").innerHTML = `FUNZIONA`
 
     console.log(array1)
     console.log(array2)
+
 
 })
